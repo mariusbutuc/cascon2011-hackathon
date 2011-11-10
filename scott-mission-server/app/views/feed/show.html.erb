@@ -1,0 +1,6 @@
+<% @entry.sanitize! %>
+
+<h1><%= link_to @entry.title, @entry.url %></h1>
+<em>by <%= @entry.author %>, <%= time_ago_in_words @entry.published %> ago</em>
+
+<p><%= raw @entry.content %></p>
